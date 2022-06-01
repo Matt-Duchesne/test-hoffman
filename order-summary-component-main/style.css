@@ -4,6 +4,7 @@
     --neutral-pale-blue: hsl(225, 100%, 98%);
     --neutral-desaturated-blue: hsl(224, 23%, 55%);
     --neutral-dark-blue: hsl(223, 47%, 23%);
+    --neutral-brighter-blue: hsl(217, 100%, 91%);
 }
 
 
@@ -25,11 +26,21 @@ body{
 }
 
 .plan-section{
-    background-color: var(--neutral-pale-blue);
+    background-color: var(--neutral-brighter-blue);
+}
+
+.price{
+    color: var(--neutral-desaturated-blue);
 }
 
 .change{
     color: var(--primary-bright-blue);
+    transition: 0.3s all ease-out;
+}
+
+.change:hover{
+    text-decoration: none;
+    color: rgba(118,108,241,255);
 }
 
 .order-button{
@@ -41,17 +52,15 @@ body{
 }
 
 .order-button:hover{
-    background-color: var(--neutral-dark-blue);
-
+    background-color: rgba(118,108,241,255);
+    transform: scale(1.02);
 }
 
-.pale-text{
+.cancel{
     color: var(--neutral-desaturated-blue);
+    transition: 0.3s all ease-out;
 }
 
-@media screen and (max-width: 499px){
-    .card{
-        margin: 0 20px;
-
-    }
+.cancel:hover{
+    color: black;
 }

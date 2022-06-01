@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -49,17 +50,17 @@
             </g>
           </svg>
           <div class="flex flex-col font-bold items-start w-2/4">
-            <p class="align-middle ">Annual Plan</p>
-            <p class="pale-text">$59.99/year</p>
+            <p class="plan-name">Annual Plan</p>
+            <p class="price">$59.99/year</p>
           </div>
           <a href="#" class="underline change">Change</a>
         </div>
         <div class="flex flex-col">
           <a href="#"
-            class="order-button w-full mx-auto my-7 px-5 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
+            class="order-button w-full mx-auto my-7 px-5 py-3 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
             Proceed to Payment
           </a>
-          <a class="pale-text" href="#">Cancel Order</a>
+          <a class="cancel" href="#">Cancel Order</a>
         </div>
       </div>
     </div>
