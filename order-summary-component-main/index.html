@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
-  <div class="background flex h-screen">
-    <div class="card m-auto w-96 flex flex-col items-center">
-      <div>
+
+<body class="background ">
+  <div class="flex flex-col justify-center items-center h-screen">
+    <div class="card max-w-md mx-auto bg-white rounded-xl border border-gray-200 shadow-lg text-center">
+      <a href="#">
         <img class="rounded-t-xl" src="images/illustration-hero.svg" alt="">
-      </div>
-      <div class="text-center px-3">
-        <h4 class="title mt-7 mb-3">Order Summary</h4>
-        <p>
-          You can now listen to millions of songs, audiobooks, and podcasts on any
-          device anywhere you like!
-        </p>
-    
-        <div class="flex">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#DFE6FB"/><path fill="#717FA6" fill-rule="nonzero" d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"/></g></svg>
-          <p class="align-middle">Annual Plan</p>
-          <p>$59.99/year</p>
-          Change
+      </a>
+      <div class="p-9">
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight">Order summary</h5>
+        </a>
+        <p class="mb-3 px-5 font-normal text-gray-700 dark:text-gray-400">You can now listen to millions of songs, audiobooks,
+          and podcasts on any
+          device anywhere you like!</p>
+        <div class="flex plan-section mt-7 p-3 rounded-xl justify-between items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
+              <path fill="#717FA6" fill-rule="nonzero"
+                d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z" />
+            </g>
+          </svg>
+          <div class="flex flex-col font-bold items-start w-2/4">
+            <p class="align-middle ">Annual Plan</p>
+            <p class="pale-text">$59.99/year</p>
+          </div>
+          <a href="#" class="underline change">Change</a>
         </div>
-    
-        <button>Proceed to Payment</button>
-        <a href="#">Cancel Order</a>
+        <div class="flex flex-col">
+          <a href="#"
+            class="order-button w-full mx-auto my-7 px-5 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Proceed to Payment
+          </a>
+          <a class="pale-text" href="#">Cancel Order</a>
+        </div>
       </div>
     </div>
+    <div class="attribution pt-5">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Matt : )</a>
   </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Matt : )</a>
+
   </div>
 </body>
+
 </html>

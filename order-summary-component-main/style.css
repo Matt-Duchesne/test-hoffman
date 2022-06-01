@@ -15,16 +15,43 @@ body{
 .background{
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-size: contain;
     background-color: var(--primary-pale-blue);
-}
-
-.card{
-    background-color: #fff;
 }
 
 .title{
     font-size: 22px;
     font-weight: 900;
+}
+
+.plan-section{
+    background-color: var(--neutral-pale-blue);
+}
+
+.change{
+    color: var(--primary-bright-blue);
+}
+
+.order-button{
+    background-color: var(--primary-bright-blue);
+    box-shadow: 10px 15px 29px 0px rgba(114,128,157,0.75);
+    -webkit-box-shadow: 10px 15px 29px 0px rgba(114,128,157,0.75);
+    -moz-box-shadow: 10px 15px 29px 0px rgba(114,128,157,0.75);
+    transition: 0.3s all ease-out;
+}
+
+.order-button:hover{
+    background-color: var(--neutral-dark-blue);
+
+}
+
+.pale-text{
+    color: var(--neutral-desaturated-blue);
+}
+
+@media screen and (max-width: 499px){
+    .card{
+        margin: 0 20px;
+
+    }
 }
