@@ -1,0 +1,71 @@
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan:hsl(184, 100%, 22%);
+    --very-dark-cyan:hsl(179, 100%, 13%);
+    --transparent-white:hsla(0, 0%, 100%, 0.75);
+    --very-light-gray:hsl(0, 0%, 95%);
+    --transparent: hsla(0,0%,0%,0);
+    
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: var(--transparent-white);
+}
+
+.card-container{
+    display: flex;
+}
+
+.title{
+    font-family: 'Big Shoulders Display', cursive !important;
+    font-size: 40px;
+}
+
+.sedans{
+    background-color: var(--bright-orange);
+}
+
+.sedans a{
+    color: var(--bright-orange);
+    transition: 0.3s all ease-out;
+}
+
+.suvs{
+    background-color: var(--dark-cyan);
+}
+
+.suvs a{
+    color: var(--dark-cyan);
+}
+
+.suvs a:hover{
+    color: var(--dark-cyan);
+}
+
+.luxury{
+    background-color: var(--very-dark-cyan);
+}
+
+.luxury a{
+    color: var(--very-dark-cyan);
+}
+
+.sedans a, .suvs a, .luxury a{
+    background-color: var(--very-light-gray);
+    transition: 0.3s all ease-out;
+}
+
+.sedans a:hover, .suvs a:hover, .luxury a:hover{
+    background-color: var(--transparent);
+    color: var(--very-light-gray);
+    border: 3px solid var(--very-light-gray);
+}
